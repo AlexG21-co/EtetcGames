@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class FuncionarioModel extends Model {
+    protected $table = 'funcionario_tb';
+
+    protected $primaryKey = 'codFun';
+
+    protected $allowedFields = ['nomeFun', 'codusu_FK','foneFun'];
+
+    protected $returnType = 'object';
+}
