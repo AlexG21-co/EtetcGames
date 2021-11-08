@@ -1,6 +1,6 @@
 <form method="POST" class="row gx-3 gy-2 align-items-center pt-3">
     <div class="col-sm-5">
-        <label class="visually-hidden" for="nome">Empresa </label>
+        <label class="visually-hidden" for="nome">Empresa Github</label>
         <div class="input-group">
             <div class="input-group-text">Fornecedor</div>
             <input type="text" class="form-control" id="nome" name="nomeForn" placeholder="Nome do Fornecedor">
