@@ -72,8 +72,18 @@ class FuncionarioControler extends BaseController
    {
       $request = service('request');
       $codFuncionario = $request->getPost('codFun');
+      $nomeFuncionario = isset($request->getPost('nomeFuncionario'))?$request->getPost('nomeFuncionario'):"";
       $FuncionarioModel = new \App\Models\FuncionarioModel();
       $registros = $FuncionarioModel->find($codFuncionario);
+
+      if($codFuncionario){
+         $registros = $FuncionarioModel->find($codFuncionario);
+         var_dump($registros);
+         }
+         else{
+            $registros= $FuncionarioModel->Like('nomeFun',$nomeFuncionario)->find();
+            var_dump($registros);
+         }
 
 
       //Verificando se existe o name para deletar
