@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+//Meu nome é Alex
 use App\Models\FornecedoModel;
 use CodeIgniter\HTTP\Request;
 
@@ -10,6 +10,7 @@ class FornecedorControler extends BaseController
 {
     public function index()
     {
+        //Alex
         echo view('header');
         echo view('cadFornecedor');
         echo view('footer');
