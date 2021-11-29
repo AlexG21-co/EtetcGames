@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use App\Models\CatJogoModel;
 use CodeIgniter\HTTP\Request;
-
+/*Teste */
 class CatJogosControler extends BaseController
 {
     public function index()
